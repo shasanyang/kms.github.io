@@ -82,27 +82,13 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.skill-bar {
-    margin: 1rem 0;
+#skills ul {
+    list-style-type: none;
 }
 
-.bar {
-    background-color: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    height: 25px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.progress {
-    background-color: #4caf50;
-    height: 100%;
-    color: white;
-    text-align: center;
-    line-height: 25px;
-    border-radius: 10px;
+#skills ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* 프로젝트 섹션 */
@@ -148,14 +134,6 @@ nav ul li a:hover {
 .resume-container .details p {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-}
-
-/* 연락처 섹션 */
-#contact {
-    padding: 2rem;
-    text-align: center;
-    background-color: #f0f0f0;
-    color: #333;
 }
 
 /* 푸터 */
