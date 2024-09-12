@@ -75,11 +75,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-#about h2 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-}
-
 /* 능력 섹션 */
 #skills {
     padding: 2rem;
@@ -87,13 +82,27 @@ nav ul li a:hover {
     text-align: center;
 }
 
-#skills ul {
-    list-style-type: none;
+.skill-bar {
+    margin: 1rem 0;
 }
 
-#skills ul li {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+.bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 25px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.progress {
+    background-color: #4caf50;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 10px;
 }
 
 /* 프로젝트 섹션 */
@@ -109,6 +118,36 @@ nav ul li a:hover {
 #projects p {
     font-size: 1.2rem;
     color: #555;
+}
+
+/* 이력 섹션 */
+#resume {
+    padding: 2rem;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-container {
+    display: flex;
+    align-items: center;
+}
+
+.resume-container .photo {
+    margin-right: 2rem;
+}
+
+.resume-container .photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.resume-container .details p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* 연락처 섹션 */
