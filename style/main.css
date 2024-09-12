@@ -68,39 +68,47 @@ nav ul li a:hover {
     background-color: #c0392b;
 }
 
-/* 프로젝트 섹션 */
-#projects .project-gallery {
-    display: flex;
-    gap: 2rem;
+/* 소개 섹션 */
+#about {
     padding: 2rem;
-    justify-content: center;
+    background-color: #fff;
+    text-align: center;
 }
 
-.project-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
+#about h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+/* 능력 섹션 */
+#skills {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+#skills ul {
+    list-style-type: none;
 }
 
-.project-card h3 {
-    margin: 1rem 0;
-    font-size: 1.5rem;
+#skills ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
-.project-card p {
-    padding: 0 1rem 1rem;
+/* 프로젝트 섹션 */
+#projects {
+    padding: 2rem;
+    text-align: center;
+}
+
+#projects h2 {
+    margin-bottom: 1rem;
+}
+
+#projects p {
+    font-size: 1.2rem;
+    color: #555;
 }
 
 /* 연락처 섹션 */
@@ -117,6 +125,10 @@ footer {
     padding: 1rem;
     background-color: #333;
     color: white;
+}
+
+footer .footer-contact {
+    margin-bottom: 1rem;
 }
 
 footer .social-icons a {
