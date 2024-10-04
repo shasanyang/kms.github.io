@@ -18,6 +18,7 @@ document.querySelectorAll('.scroll-link').forEach(anchor => {
         });
     });
 });
+
 const faders = document.querySelectorAll('.fade-in');
 
 const appearOptions = {
