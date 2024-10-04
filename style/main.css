@@ -134,14 +134,6 @@ nav ul li a:hover {
     content: "⚙ "; /* 앞에 아이콘 추가 */
 }
 
-
-/* 프로젝트 */
-#projects {
-    padding: 3rem;
-    background-color: #fff;
-    text-align: center;
-}
-
 /* 이력 */
 #resume {
     padding: 3rem;
