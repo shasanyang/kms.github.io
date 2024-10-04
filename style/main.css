@@ -56,7 +56,7 @@ nav ul li a:hover {
 
 /* 배너 */
 #main-banner {
-    height: 110vh;
+    height: 120vh;
     background: url('../assets/images/background.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -82,7 +82,23 @@ nav ul li a:hover {
     padding: 3rem;
     background-color: #f9f9f9;
     text-align: center;
+    visibility: visible; /* 가시성 설정 */
 }
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#skills ul li::before {
+    content: "⚙ "; /* 앞에 아이콘 추가 */
+}
+
 
 /* 프로젝트 */
 #projects {
