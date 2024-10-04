@@ -8,7 +8,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
+    background-color: #f5f7fa; /* 파스텔 블루 */
+    color: #333;
 }
 
 /* 애니메이션 클래스 */
@@ -62,27 +63,61 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #333;
 }
 
 #main-banner h1 {
     font-size: 4rem;
     margin-bottom: 2rem;
+    color: #37474f;
+}
+
+#main-banner p {
+    font-size: 1.5rem;
+    color: #546e7a; /* 파스텔 그레이 */
+}
+
+.btn {
+    background-color: #b3e5fc; /* 파스텔 블루 버튼 */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #81d4fa; /* 호버 시 진한 파스텔 블루 */
 }
 
 /* 소개 */
 #about {
     padding: 3rem;
-    background-color: #fff;
+    background-color: #e1f5fe; /* 파스텔 블루 */
+    color: #333;
     text-align: center;
 }
 
 /* 능력 */
 #skills {
     padding: 3rem;
-    background-color: #f9f9f9;
-    text-align: center;
+    background-color: #fff3e0; /* 파스텔 오렌지 */
+    color: #333;
     visibility: visible; /* 가시성 설정 */
+}
+
+/* 프로젝트 섹션 */
+#projects {
+    padding: 3rem;
+    background-color: #fce4ec; /* 파스텔 핑크 */
+    color: #333;
+}
+
+/* 이력 섹션 */
+#resume {
+    padding: 3rem;
+    background-color: #f1f8e9; /* 파스텔 그린 */
+    color: #333;
 }
 
 #skills ul {
