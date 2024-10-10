@@ -58,12 +58,33 @@ nav ul li a:hover {
 /* 배너 */
 #main-banner {
     height: 120vh;
-    background: url('../assets/images/background.jpg') no-repeat center center/cover;
+    background-color: #ffebee; /* 파스텔 핑크 배경 */
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #333;
+    position: relative;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: left;
+    color: #37474f; /* 텍스트 색상 */
+}
+
+.banner-text h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.banner-character img {
+    width: 400px;
+    height: auto;
 }
 
 #main-banner h1 {
