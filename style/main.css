@@ -121,10 +121,61 @@ nav ul li a:hover {
 
 /* 능력 */
 #skills {
-    padding: 3rem;
-    background-color: #fff3e0; /* 파스텔 오렌지 */
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.skills-content h2 {
+    text-align: center;
     color: #333;
-    visibility: visible; /* 가시성 설정 */
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 20px;
+    border-radius: 5px;
+}
+
+.csharp {
+    width: 55%;
+    background-color: #4CAF50; /* 초록색 */
+}
+
+.java {
+    width: 65%;
+    background-color: #2196F3; /* 파란색 */
+}
+
+.php {
+    width: 50%;
+    background-color: #FF9800; /* 주황색 */
+}
+
+.html {
+    width: 70%;
+    background-color: #f44336; /* 빨간색 */
+}
+
+.jsp {
+    width: 60%;
+    background-color: #9C27B0; /* 보라색 */
 }
 
 /* 프로젝트 섹션 */
