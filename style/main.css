@@ -148,9 +148,17 @@ nav ul li a:hover {
 }
 
 .skill p {
+    display: flex;
+    align-items: center;
     margin: 0;
     font-size: 1.2rem;
     color: #333;
+}
+
+.skill-icon {
+    width: 24px; /* 아이콘 크기 */
+    height: 24px;
+    margin-right: 10px; /* 아이콘과 텍스트 사이 간격 */
 }
 
 .skill-bar {
@@ -188,6 +196,11 @@ nav ul li a:hover {
 .jsp {
     width: 60%;
     background-color: #9C27B0; /* 보라색 */
+}
+
+.cs {
+    width: 60%;
+    background-color: #673AB7; /* 깊은 보라색 */
 }
 
 /* 프로젝트 섹션 */
