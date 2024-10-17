@@ -121,9 +121,21 @@ nav ul li a:hover {
 
 /* 능력 */
 #skills {
+    display: block; /* 숨겨진 경우 보이게 설정 */
     padding: 50px;
-    background-color: #f4f4f4;
-    text-align: left;
+    background-color: #f4f4f4; /* 배경색 설정 */
+    color: #333; /* 글자색 설정 */
+    text-align: center;
+}
+
+.skills-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-content li {
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
 
 .skills-content h2 {
