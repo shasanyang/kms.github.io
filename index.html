@@ -4,45 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김민석 포트폴리오</title>
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about" class="scroll-link">소개</a></li>
-                <li><a href="#skills" class="scroll-link">능력</a></li>
-                <li><a href="#projects" class="scroll-link">프로젝트</a></li>
-                <li><a href="#resume" class="scroll-link">이력</a></li>
-            </ul>
-        </nav>
+        <div class="banner">
+            <h1>김민석 포트폴리오</h1>
+            <!-- 추가된 메인 배너 이미지 삽입 -->
+            <img src="assets/images/main-banner.png" alt="메인 배너 이미지">
+        </div>
     </header>
 
-    <section id="main-banner">
-        <div class="banner-content">
-            <div class="banner-text">
-                <h1>김민석의 포트폴리오</h1>
-            </div>
-            <div class="banner-character">
-                <img src="assets/images/game-character-pixel.png" alt="게임 캐릭터">
-            </div>
+    <section id="about">
+        <h2>나에 대한 소개</h2>
+        <div class="profile">
+            <img src="assets/images/my-photo.png" alt="김민석 프로필 사진">
+            <ul>
+                <li>이름: 김민석</li>
+                <li>생년월일: 2002년 4월 8일</li>
+                <li>주소: 김해시 월산로 151, 404동 1502호</li>
+                <li>이메일: kms020408@gmail.com</li>
+            </ul>
         </div>
     </section>
-    
-    <section id="about" class="fade-in">
-        <h2>소개</h2>
-        <p>안녕하세요! 저는 아름답고 상호작용이 가능한 웹 경험을 만드는 웹 개발자입니다.</p>
-    </section>
-
-    <section id="skills" class="slide-in">
-        <h2>능력</h2>
-        <ul>
-            <li>C#: 55%</li>
-            <li>Java: 65%</li>
-            <li>PHP: 50%</li>
-            <li>HTML: 70%</li>
-        </ul>
-    </section>    
 
     <section id="skills">
         <div class="skills-content">
@@ -68,36 +53,25 @@
                 <p>JSP</p>
             </div>
             <div class="skill">
-                <img src="assets/images/css-icon.png" alt="CSS Icon" class="large-skill-icon">
-                <p>CSS</p>
+                <img src="assets/images/cs-icon.png" alt="CS Icon" class="large-skill-icon">
+                <p>CS</p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="fade-in">
-        <h2>프로젝트</h2>
-        <p>현재 진행 중인 프로젝트가 없습니다. 새로운 프로젝트를 준비 중입니다.</p>
+    <!-- 프로젝트 섹션 추가 -->
+    <section id="projects">
+        <h2>진행 중인 프로젝트</h2>
+        <p>현재 진행 중인 프로젝트가 없습니다.</p>
     </section>
 
-    <section id="resume" class="slide-in">
-        <h2>이력</h2>
-        <div class="resume-container">
-            <div class="photo">
-                <img src="assets/images/myphoto.jpg" alt="김민석 사진">
-            </div>
-            <div class="details">
-                <p><strong>이름:</strong> 김민석</p>
-                <p><strong>생년월일:</strong> 2002년 4월 8일</p>
-                <p><strong>주소:</strong> 김해시 월산로 151 404동 1502호</p>
-                <p><strong>이메일:</strong> <a href="mailto:kms020408@gmail.com">kms020408@gmail.com</a></p>
-            </div>
-        </div>
-    </section>
+    <!-- 하단 배너 추가 -->
+<footer>
+    <div class="contact-banner">
+        <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+        <p>© 2024 Kim Minsuk. All Rights Reserved.</p>
+    </div>
+</footer>
 
-    <footer>
-        <p>© 2024 김민석 포트폴리오</p>
-    </footer>
-
-    <script src="script/main.js"></script>
 </body>
 </html>
