@@ -1,139 +1,72 @@
-/* 기본 설정 */
-* {
+/* 기본 스타일 및 애니메이션 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f5f7fa; /* 파스텔 블루 */
-    color: #333;
+header {
+    background-color: #87ceeb;
+    text-align: left;
+    padding: 50px 0;
 }
 
-/* 애니메이션 클래스 */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.slide-in {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.slide-in.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* 다른 CSS 설정 */
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-}
-
-nav ul li a {
-    color: #fff;
-    padding: 1rem;
-    display: block;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #444;
-}
-
-/* 배너 */
-#main-banner {
-    background-color: #ffebee; /* 파스텔 핑크 배경 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner {
     position: relative;
-    height: 120vh;
-}
-
-.banner-content {
     display: flex;
     justify-content: space-between;
-    width: 80%;
     align-items: center;
 }
 
-.banner-text {
-    text-align: left;
-    color: #37474f; /* 텍스트 색상 */
+.banner h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-left: 20px;
 }
 
-.banner-text h1 {
-    font-size: 4rem;
-    margin: 0;
-}
-
-.banner-character img {
-    width: 400px;
+.banner img {
+    width: 100%;
+    max-width: 400px;
     height: auto;
 }
 
-#main-banner h1 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    color: #37474f;
-}
-
-#main-banner p {
-    font-size: 1.5rem;
-    color: #546e7a; /* 파스텔 그레이 */
-}
-
-.btn {
-    background-color: #b3e5fc; /* 파스텔 블루 버튼 */
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #81d4fa; /* 호버 시 진한 파스텔 블루 */
-}
-
-/* 소개 */
-#about {
-    padding: 3rem;
-    background-color: #e1f5fe; /* 파스텔 블루 */
-    color: #333;
-    text-align: center;
-}
-
-/* 능력 */
-#skills {
+#about, #projects {
     padding: 50px;
-    background-color: #f0f8ff; /* 부드러운 파스텔톤 배경 */
+    background-color: #e6f2ff;
+}
+
+#projects {
     text-align: center;
 }
 
-.skills-content ul {
+#projects p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile ul {
     list-style: none;
     padding: 0;
 }
 
-.skills-content li {
-    font-size: 1.2rem;
-    margin: 10px 0;
+#skills {
+    padding: 50px;
+    background-color: #f0f8ff;
+    text-align: center;
 }
 
 .skills-content h2 {
@@ -147,83 +80,23 @@ nav ul li a:hover {
     margin: 20px;
     text-align: center;
 }
+
 .large-skill-icon {
-    width: 100px; /* 이미지 크기 */
+    width: 100px;
     height: 100px;
     display: block;
     margin: 0 auto 10px;
 }
 
-.skill p {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.skill-icon {
-    width: 24px; /* 아이콘 크기 */
-    height: 24px;
-    margin-right: 10px; /* 아이콘과 텍스트 사이 간격 */
-}
-
-.skill-bar {
-    width: 100%;
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.skill-level {
-    height: 20px;
-    border-radius: 5px;
-}
-
-/* 프로젝트 섹션 */
-#projects {
-    padding: 3rem;
-    background-color: #fce4ec; /* 파스텔 핑크 */
-    color: #333;
-}
-
-/* 이력 섹션 */
-#resume {
-    padding: 3rem;
-    background-color: #f1f8e9; /* 파스텔 그린 */
-    color: #333;
-}
-
-#skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#skills ul li {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-}
-
-#skills ul li::before {
-    content: "⚙ "; /* 앞에 아이콘 추가 */
-}
-
-/* 이력 */
-#resume {
-    padding: 3rem;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.resume-container .photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
+/* 하단 배너 스타일 */
 footer {
-    text-align: center;
-    padding: 1rem;
     background-color: #333;
-    color: white;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-banner p {
+    font-size: 1rem;
+    margin: 0;
 }
