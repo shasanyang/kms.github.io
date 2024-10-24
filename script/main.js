@@ -1,26 +1,20 @@
-const faders = document.querySelectorAll('.fade-in');
-const sliders = document.querySelectorAll('.slide-in');
-
-const appearOptions = {
-    threshold: 0.1, // 보이는 정도
-    rootMargin: "0px 0px -50px 0px" // 얼마나 빨리 나타날지
-};
-
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add('visible');
-            appearOnScroll.unobserve(entry.target); // 한번 보이면 다시 감시하지 않음
-        }
+// Smooth scroll functionality for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-}, appearOptions);
-
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
 });
 
-sliders.forEach(slider => {
-    appearOnScroll.observe(slider);
+// Fade-in animation when scrolling
+window.addEventListener('scroll', function() {
+    const skillsSection = document.getElementById('skills');
+    const skillsPosition = skillsSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.3;
+
+    if (skillsPosition < screenPosition) {
+        skillsSection.classList.add('fade-in');
+    }
 });
