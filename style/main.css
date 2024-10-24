@@ -100,3 +100,21 @@ footer {
     font-size: 1rem;
     margin: 0;
 }
+
+/* Smooth fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ensure all sections start hidden */
+#skills {
+    opacity: 0;
+    transform: translateY(20px);
+}
